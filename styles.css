@@ -1,0 +1,163 @@
+/**
+ * Main styles for the Motivation Chrome Extension
+ * @file styles.css
+ * @description Defines the visual appearance and layout of the popup interface
+ */
+
+/* Base styles */
+body {
+    width: 300px;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+/* Main container styles */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Quote display styles */
+#quote-container {
+    margin-bottom: 15px;
+}
+
+#quote-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#quote-count {
+    font-size: 12px;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+/* Button container and button styles */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+#next-quote {
+    background-color: #007bff;
+    color: white;
+    flex: 2;
+}
+
+#next-quote:hover {
+    background-color: #0056b3;
+}
+
+#favorite-quote {
+    background-color: #dc3545;
+    color: white;
+    flex: 1;
+}
+
+#favorite-quote:hover {
+    background-color: #c82333;
+}
+
+/* Favorite quotes section styles */
+#favorite-container {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+}
+
+.favorite-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#favorite-container h3 {
+    font-size: 14px;
+    color: #343a40;
+    margin: 0;
+}
+
+.clear-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.clear-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Favorite quotes list styles */
+.favorite-quotes-list {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.favorite-quote {
+    font-size: 14px;
+    color: #6c757d;
+    font-style: italic;
+    margin: 0 0 10px 0;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-quote {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 8px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.delete-quote:hover {
+    opacity: 1;
+}
+
+/* Custom scrollbar styles */
+.favorite-quotes-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.favorite-quotes-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.favorite-quotes-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.favorite-quotes-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

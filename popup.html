@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+ * Popup interface for the Motivation Chrome Extension
+ * @file popup.html
+ * @description Main UI for displaying and managing motivational quotes
+ * @requires styles.css
+ * @requires popup.js
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation on the Go</title>
+    <!-- Main stylesheet for the popup interface -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main container for the popup interface -->
+    <div class="container">
+        <!-- Quote display section -->
+        <div id="quote-container">
+            <p id="quote-text"></p>
+            <p id="quote-count">Quotes viewed this session: <span id="count">0</span></p>
+        </div>
+        <!-- Action buttons section -->
+        <div class="button-container">
+            <button id="next-quote">✨ Next Quote</button>
+            <button id="favorite-quote">❤️ Favorite</button>
+        </div>
+        <!-- Favorite quotes section -->
+        <div id="favorite-container">
+            <div class="favorite-header">
+                <h3>Favorite Quotes:</h3>
+                <button id="clear-favorites" class="clear-btn">🗑️ Clear All</button>
+            </div>
+            <div id="favorite-text" class="favorite-quotes-list"></div>
+        </div>
+    </div>
+    <!-- Application scripts -->
+    <script src="popup.js"></script>
+</body>
+
+</html>
